@@ -1,8 +1,7 @@
 from dataclasses import dataclass
 
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
-
 from adaptix.conversion import get_converter
+from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
 
 class Base(DeclarativeBase):

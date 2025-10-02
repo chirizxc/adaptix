@@ -1,9 +1,8 @@
 import datetime
 
-from msgspec import Struct
-
 from adaptix import Retort
 from adaptix.integrations.msgspec import native_msgspec
+from msgspec import Struct
 
 
 class Music(Struct):
