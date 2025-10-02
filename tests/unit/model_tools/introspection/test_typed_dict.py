@@ -1,4 +1,3 @@
-# ruff: noqa: FBT001, FBT003
 import typing
 from types import MappingProxyType
 from typing import Annotated, TypedDict

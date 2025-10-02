@@ -1,4 +1,3 @@
-# ruff: noqa: PT011
 from collections.abc import Mapping as CollectionsMapping, Sequence as CollectionsSequence
 from dataclasses import dataclass, replace
 from types import MappingProxyType
