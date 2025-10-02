@@ -283,7 +283,7 @@ typing-extensions==4.13.2
     #   sqlalchemy
 urllib3==2.4.0
     # via requests
-uv==0.7.6
+uv==0.8.22
     # via
     #   -r requirements/raw/pre.txt
     #   tox-uv
