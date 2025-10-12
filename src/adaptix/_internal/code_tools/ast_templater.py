@@ -9,7 +9,7 @@ class Substitutor(NodeTransformer):
     def __init__(self, substitution: Mapping[str, AST]):
         self._substitution = substitution
 
-    def visit_Name(self, node: ast.Name):  # noqa: N802
+    def visit_Name(self, node: ast.Name):
         if node.id in self._substitution:
             return self._substitution[node.id]
         return node

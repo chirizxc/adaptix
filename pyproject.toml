@@ -116,6 +116,14 @@ ignore_decorators = ['@_aspect_storage.add', '@overload', '@abstractmethod']
 line-length = 120
 output-format = "concise"
 
+extend = "docs/examples/ruff.toml"
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+extra-standard-library = [
+    "tomllib",  # because requires-python = '>=3.9'
+]
+
 [tool.ruff.lint]
 
 allowed-confusables = ['×', '‹', '›']
@@ -171,15 +179,38 @@ ignore = [
   'PYI025',
   'TC006',
   'C420',
-
-  # Rules conflictin with other tools
-  'I001',
+  'PYI061',
 ]
+
+[tool.ruff.per-file-target-version]
+"tests/unit/type_tools/data_generics_312.py" = "py312"
+"tests/unit/type_tools/data_type_alias_312.py" = "py312"
+"tests/unit/type_tools/test_type_rendering_312.py" = "py312"
+"tests/unit/type_tools/test_normalize_type_312.py" = "py312"
+"tests/integration/morphing/test_type_alias_312.py" = "py312"
+"tests/integration/morphing/test_generic_model_312.py" = "py312"
+"tests/unit/provider/shape_provider/data_gen_models_312.py" = "py312"
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ['F401']
 
-"test_*" = ['S101', 'PLR2004', 'PLC0105', 'N806', 'FA102', 'UP035', 'UP006', 'E501']
+"tests/*" = [
+  'S101',
+  'PLR2004',
+  'N806',
+  'FA102',
+  'UP006', # turn on after 3.9
+  'UP035', # turn on after 3.9
+  'UP044', # turn on after 3.9
+  'UP045', # turn on after 3.9
+  'UP049',
+  'E501',
+  'PLC0105',
+  'PLC0415',
+  'PYI061',
+  'PLW1641',
+  'FURB157',
+]
 "tests/*/local_helpers.py" = ['S101', 'PLR2004', 'PLC0105', 'N806', 'FA102']
 "tests/*/data_*.py" = ['F821']
 "tests/tests_helpers/*" = ['INP001', 'S101']
@@ -191,7 +222,12 @@ ignore = [
   'SLOT000', 'S106', 'DTZ001'
 ]
 
-"scripts/*" = ['INP001']
+"examples/*" = [
+  'UP035', 'UP006', # turn on after 3.9
+  'PLW1641', 'S101'
+]
+
+"scripts/*" = ['INP001', 'PT028']
 
 [tool.ruff.lint.pyupgrade]
 keep-runtime-typing = true

@@ -1,10 +1,9 @@
 from dataclasses import dataclass
 from typing import Literal, Union
 
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
-
 from adaptix import Retort
 from adaptix.integrations.sqlalchemy import AdaptixJSON
+from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
 
 @dataclass

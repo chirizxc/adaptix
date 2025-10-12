@@ -28,7 +28,7 @@ def stub_constructor(*args, **kwargs):
 def test_inconsistent_fields_order(first, second):
     with pytest.raises(
         ValueError,
-        match="^Inconsistent order of fields.*",
+        match=r"^Inconsistent order of fields.*",
     ):
         InputShape(
             constructor=stub_constructor,

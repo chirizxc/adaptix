@@ -1,6 +1,5 @@
-from sqlalchemy.orm import Mapped, mapped_column
-
 from adaptix._internal.integrations.sqlalchemy.orm import AdaptixJSON
+from sqlalchemy.orm import Mapped, mapped_column
 
 from .preamble import AnyAuditLog, Base, db_retort
 

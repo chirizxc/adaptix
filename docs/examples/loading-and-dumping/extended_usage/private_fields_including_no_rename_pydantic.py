@@ -1,6 +1,5 @@
-from pydantic import BaseModel
-
 from adaptix import Retort, name_mapping
+from pydantic import BaseModel
 
 
 class Book(BaseModel):

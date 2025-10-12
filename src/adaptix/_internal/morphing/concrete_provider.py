@@ -145,7 +145,7 @@ class DatetimeTimestampProvider(MorphingProvider):
 class DateTimestampProvider(MorphingProvider):
     def _is_pydatetime(self) -> bool:
         try:
-            import _pydatetime
+            import _pydatetime  # noqa: PLC0415
         except ImportError:
             return False
         else:

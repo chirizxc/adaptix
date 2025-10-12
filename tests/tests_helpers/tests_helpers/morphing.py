@@ -2,14 +2,13 @@ from collections.abc import Iterable, Sequence
 from dataclasses import dataclass
 from typing import Any, Callable, Union
 
-from tests_helpers import raises_exc
-
 from adaptix import Omitted, Retort, TypeHint
 from adaptix._internal.common import VarTuple
 from adaptix._internal.definitions import Direction
 from adaptix._internal.morphing.facade.func import DumpedJSONSchema, generate_json_schema
 from adaptix._internal.morphing.json_schema.schema_model import JSONSchemaType
 from adaptix._internal.morphing.load_error import LoadError
+from tests_helpers import raises_exc
 
 try:
     import jsonschema as jsonschema_py

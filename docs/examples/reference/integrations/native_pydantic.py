@@ -1,7 +1,6 @@
-from pydantic import BaseModel, Field
-
 from adaptix import Retort
 from adaptix.integrations.pydantic import native_pydantic
+from pydantic import BaseModel, Field
 
 
 class Book(BaseModel):

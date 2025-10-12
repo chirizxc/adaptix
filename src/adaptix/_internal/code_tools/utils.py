@@ -1,4 +1,3 @@
-# ruff: noqa: E721
 import builtins
 import math
 from enum import Enum
