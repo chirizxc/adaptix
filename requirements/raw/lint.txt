@@ -2,7 +2,7 @@
 -r _bench-orchestrate.txt
 -r doc.txt
 
-pre-commit==4.2.0
+prek==0.2.5
 
 mypy[faster-cache]==1.15.0
 

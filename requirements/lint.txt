@@ -24,8 +24,6 @@ cattrs==23.1.2
     # via -r requirements/raw/bench.txt
 certifi==2025.4.26
     # via requests
-cfgv==3.4.0
-    # via pre-commit
 charset-normalizer==3.4.2
     # via requests
 colorama==0.4.6
@@ -39,8 +37,6 @@ dataclass-factory==2.16
     # via -r requirements/raw/bench.txt
 dirty-equals==0.9.0
     # via -r requirements/raw/_test_base.txt
-distlib==0.3.9
-    # via virtualenv
 dlint==0.14.1
     # via -r requirements/raw/lint.txt
 docutils==0.21.2
@@ -52,8 +48,6 @@ docutils==0.21.2
     #   sphinx-paramlinks
 docutils-stubs==0.0.22
     # via -r requirements/raw/doc.txt
-filelock==3.18.0
-    # via virtualenv
 flake8==7.2.0
     # via dlint
 furo==2024.8.6
@@ -62,8 +56,6 @@ gitdb==4.0.12
     # via gitpython
 gitpython==3.1.44
     # via -r requirements/raw/doc.txt
-identify==2.6.10
-    # via pre-commit
 idna==3.10
     # via requests
 imagesize==1.4.1
@@ -112,8 +104,6 @@ myst-parser==4.0.1
     # via -r requirements/raw/doc.txt
 narwhals==1.40.0
     # via plotly
-nodeenv==1.9.1
-    # via pre-commit
 orjson==3.10.18
     # via mypy
 packaging==25.0
@@ -126,15 +116,13 @@ pbr==6.1.1
     # via sphinxcontrib-apidoc
 phonenumberslite==9.0.5
     # via -r requirements/raw/_test_base.txt
-platformdirs==4.3.8
-    # via virtualenv
 plotly==6.1.1
     # via
     #   -r requirements/raw/_bench-orchestrate.txt
     #   -r requirements/raw/doc.txt
 pluggy==1.6.0
     # via pytest
-pre-commit==4.2.0
+prek==0.2.5
     # via -r requirements/raw/lint.txt
 psutil==5.9.5
     # via
@@ -161,9 +149,7 @@ pytest==8.3.5
     #   -r requirements/raw/_test_base.txt
     #   -r requirements/raw/bench.txt
 pyyaml==6.0.2
-    # via
-    #   myst-parser
-    #   pre-commit
+    # via myst-parser
 radon==6.0.1
     # via -r requirements/raw/lint.txt
 referencing==0.36.2
@@ -249,7 +235,5 @@ typing-extensions==4.13.2
     #   sqlalchemy
 urllib3==2.4.0
     # via requests
-virtualenv==20.31.2
-    # via pre-commit
 vulture==2.10
     # via -r requirements/raw/lint.txt
