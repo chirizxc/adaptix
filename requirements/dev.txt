@@ -204,7 +204,7 @@ rpds-py==0.25.1
     # via
     #   jsonschema
     #   referencing
-ruff==0.13.2
+ruff==0.14.0
     # via -r requirements/raw/lint.txt
 schematics==2.1.1
     # via -r requirements/raw/bench.txt

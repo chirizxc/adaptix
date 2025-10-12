@@ -115,7 +115,7 @@ exclude = [
     "docs/**.py",
     "benchmarks/**.py"
 ]
-
+extend = "docs/examples/ruff.toml"
 [tool.ruff.lint.isort]
 combine-as-imports = true
 extra-standard-library = [
