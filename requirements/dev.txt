@@ -20,7 +20,7 @@ babel==2.17.0
     # via sphinx
 beautifulsoup4==4.13.4
     # via furo
-cachetools==6.2.1
+cachetools==5.5.2
     # via tox
 cattrs==23.1.2
     # via -r requirements/raw/bench.txt
@@ -146,7 +146,7 @@ phonenumberslite==9.0.5
     # via -r requirements/raw/_test_base.txt
 pip==25.1.1
     # via -r requirements/raw/pre.txt
-platformdirs==4.5.0
+platformdirs==4.3.8
     # via
     #   tox
     #   virtualenv
@@ -287,7 +287,7 @@ uv==0.7.6
     # via
     #   -r requirements/raw/pre.txt
     #   tox-uv
-virtualenv==20.35.3
+virtualenv==20.31.2
     # via
     #   pre-commit
     #   tox
