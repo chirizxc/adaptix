@@ -180,6 +180,7 @@ ignore = [
   'TC006',
   'C420',
   'PYI061',
+  'PLW1641',
 ]
 
 [tool.ruff.per-file-target-version]

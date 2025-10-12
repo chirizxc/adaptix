@@ -44,7 +44,7 @@ from ..definitions import (
 T = TypeVar("T")
 
 
-class IdWrapper(Generic[T]):  # noqa: PLW1641
+class IdWrapper(Generic[T]):
     def __init__(self, value):
         self.value = value
 
