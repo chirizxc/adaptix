@@ -62,7 +62,7 @@ docutils==0.21.2
     #   sphinx-paramlinks
 docutils-stubs==0.0.22
     # via -r requirements/raw/doc.txt
-filelock==3.20.0
+filelock==3.18.0
     # via
     #   tox
     #   virtualenv
@@ -283,7 +283,7 @@ typing-extensions==4.13.2
     #   sqlalchemy
 urllib3==2.4.0
     # via requests
-uv==0.8.24
+uv==0.9.2
     # via
     #   -r requirements/raw/pre.txt
     #   tox-uv
