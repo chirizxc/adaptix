@@ -183,17 +183,13 @@ ignore = [
   'PLR2004',
   'PLC0105',
   'N806',
-  'FA102',
   'E501',
-  'PLC0415',
-  'PYI061',
   'UP006',
   'UP035',
   'UP044',
   'UP045',  # turn on after 3.9
   'UP049',
   'FURB157',
-  'PLW1641'
 ]
 "tests/*/local_helpers.py" = ['S101', 'PLR2004', 'PLC0105', 'N806', 'FA102']
 "tests/*/data_*.py" = ['F821']
