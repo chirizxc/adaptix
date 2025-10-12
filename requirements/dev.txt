@@ -20,7 +20,7 @@ babel==2.17.0
     # via sphinx
 beautifulsoup4==4.13.4
     # via furo
-cachetools==5.5.2
+cachetools==6.2.1
     # via tox
 cattrs==23.1.2
     # via -r requirements/raw/bench.txt
@@ -62,7 +62,7 @@ docutils==0.21.2
     #   sphinx-paramlinks
 docutils-stubs==0.0.22
     # via -r requirements/raw/doc.txt
-filelock==3.18.0
+filelock==3.20.0
     # via
     #   tox
     #   virtualenv
@@ -146,7 +146,7 @@ phonenumberslite==9.0.5
     # via -r requirements/raw/_test_base.txt
 pip==25.1.1
     # via -r requirements/raw/pre.txt
-platformdirs==4.3.8
+platformdirs==4.5.0
     # via
     #   tox
     #   virtualenv
@@ -269,9 +269,9 @@ toml==0.10.2
     # via vulture
 towncrier==24.8.0
     # via -r requirements/raw/dev.txt
-tox==4.26.0
+tox==4.31.0
     # via tox-uv
-tox-uv==1.25.0
+tox-uv==1.29.0
     # via -r requirements/raw/runner.txt
 typing-extensions==4.13.2
     # via
@@ -287,7 +287,7 @@ uv==0.9.2
     # via
     #   -r requirements/raw/pre.txt
     #   tox-uv
-virtualenv==20.31.2
+virtualenv==20.35.3
     # via
     #   pre-commit
     #   tox
