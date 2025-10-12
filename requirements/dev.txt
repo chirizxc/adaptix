@@ -269,7 +269,7 @@ toml==0.10.2
     # via vulture
 towncrier==24.8.0
     # via -r requirements/raw/dev.txt
-tox==4.31.0
+tox==4.26.0
     # via tox-uv
 tox-uv==1.25.0
     # via -r requirements/raw/runner.txt
