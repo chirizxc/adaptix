@@ -107,14 +107,6 @@ ignore_decorators = ['@_aspect_storage.add', '@overload', '@abstractmethod']
 line-length = 120
 output-format = "concise"
 
-include = [
-  "src/**.py",
-  "tests/**.py",
-]
-exclude = [
-    "docs/**.py",
-    "benchmarks/**.py"
-]
 extend = "docs/examples/ruff.toml"
 
 [tool.ruff.lint.isort]
@@ -153,7 +145,6 @@ ignore = [
   'BLE001',
   'RUF009',
   'PD011',
-  'PLC0415',
 
   # Rules that are not applicable in the project for now
   'TID252',
@@ -181,6 +172,7 @@ ignore = [
   'C420',
   'PLW1641',
   'PYI061',
+  'PLC0415',
 ]
 
 [tool.ruff.lint.per-file-ignores]
@@ -214,7 +206,12 @@ ignore = [
   'SLOT000', 'S106', 'DTZ001'
 ]
 
-"scripts/*" = ['INP001']
+"scripts/*" = ['INP001', 'PT028']
+
+"examples/*" = [
+  "S101",
+  "UP035", "UP006",  # turn on after 3.9
+]
 
 [tool.ruff.per-file-target-version]
 "tests/unit/type_tools/data_generics_312.py" = "py312"
