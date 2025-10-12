@@ -271,7 +271,7 @@ towncrier==24.8.0
     # via -r requirements/raw/dev.txt
 tox==4.31.0
     # via tox-uv
-tox-uv==1.28.0
+tox-uv==1.25.0
     # via -r requirements/raw/runner.txt
 typing-extensions==4.13.2
     # via
