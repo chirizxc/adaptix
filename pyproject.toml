@@ -184,13 +184,7 @@ ignore = [
 ]
 
 [tool.ruff.per-file-target-version]
-"tests/unit/type_tools/data_generics_312.py" = "py312"
-"tests/unit/type_tools/data_type_alias_312.py" = "py312"
-"tests/unit/type_tools/test_type_rendering_312.py" = "py312"
-"tests/unit/type_tools/test_normalize_type_312.py" = "py312"
-"tests/integration/morphing/test_type_alias_312.py" = "py312"
-"tests/integration/morphing/test_generic_model_312.py" = "py312"
-"tests/unit/provider/shape_provider/data_gen_models_312.py" = "py312"
+"tests/*_312.py" = "py312"
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ['F401']
